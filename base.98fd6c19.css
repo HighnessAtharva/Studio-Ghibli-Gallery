@@ -38,7 +38,7 @@ body {
 	top: 0;
 	opacity: 0;
 	pointer-events: none;
-	mix-blend-mode:color-dodge;
+	mix-blend-mode: color-dodge;
 	transition: transform 500ms;
 }
 
@@ -55,8 +55,21 @@ body {
 
 body:hover #custom-cursor {
 	opacity: 1;
-  }
+}
 
+.padded-dropcap {
+	float: left;
+	line-height: 35px;
+	font-size: 3em;
+	font-family: Montserrat;
+	color: #00a637;
+	padding: 5px 5px 5px 0px;
+	margin-right: 5px;
+	margin-bottom: 0px;
+	transform: translateY(10px);
+  }
+  
+  
 
 /* Page Loader */
 .js .loading::before,
@@ -156,6 +169,7 @@ main {
 	position: relative;
 	align-content: center;
 	justify-content: space-around;
+
 }
 
 .content--auto {
@@ -203,8 +217,9 @@ main {
 
 .content__image {
 	display: flex;
-	align-items: flex-end;
-	justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 50px;
 	/* Add any additional styles for the image container */
 }
 
@@ -350,13 +365,13 @@ main {
 }
 
 .tiles__line-img {
-    --tile-margin: 2vw;
-    flex: none;
-    width: calc(16.6666% - var(--tile-margin) * 2);
-    height: calc(var(--tileswrap-height) / 3 - (3 * var(--tile-margin) / 2));
-    margin: var(--tile-margin);
-    background-size: cover;
-    background-position: 50% 50%;
+	--tile-margin: 2vw;
+	flex: none;
+	width: calc(16.6666% - var(--tile-margin) * 2);
+	height: calc(var(--tileswrap-height) / 3 - (3 * var(--tile-margin) / 2));
+	margin: var(--tile-margin);
+	background-size: cover;
+	background-position: 50% 50%;
 }
 
 .tiles__line-img:hover {
@@ -456,7 +471,7 @@ main {
 
 .tiles__title--right {
 	justify-content: flex-end;
-	
+
 }
 
 .tiles__title--left {
@@ -468,9 +483,9 @@ main {
 }
 
 .slider-text {
-    padding: 1rem 1rem;
-    background-color: #06060685;
-    max-width: 50%;
+	padding: 1rem 1rem;
+	background-color: #06060685;
+	max-width: 50%;
 }
 
 .backtop {
