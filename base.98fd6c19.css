@@ -67,9 +67,9 @@ body:hover #custom-cursor {
 	margin-right: 5px;
 	margin-bottom: 0px;
 	transform: translateY(10px);
-  }
-  
-  
+}
+
+
 
 /* Page Loader */
 .js .loading::before,
@@ -169,8 +169,9 @@ main {
 	position: relative;
 	align-content: center;
 	justify-content: space-around;
-
 }
+
+
 
 .content--auto {
 	min-height: 0;
@@ -217,9 +218,9 @@ main {
 
 .content__image {
 	display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 0 50px;
+	align-items: center;
+	justify-content: space-around;
+	padding: 0 50px;
 	/* Add any additional styles for the image container */
 }
 
@@ -494,6 +495,14 @@ main {
 	font-size: 6vw;
 	cursor: pointer;
 	text-decoration: none;
+	
+	background-color: #00a91c;
+	background-image: linear-gradient(45deg, #0c9c43, #096f00);
+	background-size: 100%;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-text-fill-color: transparent;
 }
 
 .backtop::after {
@@ -631,6 +640,26 @@ html.has-scroll-dragging {
 
 	.tiles--small {
 		--tiles-height: 240px;
+	}
+}
+
+
+@media only screen (max-device-width: 768px) {
+	body::before {
+		content: "Please visit this website from a computer to experience its full features.";
+		display: block;
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		font-size: 24px;
+		font-weight: bold;
+		text-align: center;
+		color: #ffffff;
+		background-color: #000000;
+		padding: 20px;
+		border-radius: 10px;
+		z-index: 9999;
 	}
 }
 
